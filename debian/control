@@ -1,0 +1,16 @@
+Source: python3-rrdtool
+Section: python
+Priority: optional
+Maintainer: Robert Manner <manner@balabit.com>
+Build-Depends: debhelper (>= 7.3.16), python3-dev (>= 3.2.0),
+               librrd-dev (>=1.4.7)
+Standards-Version: 3.9.2
+Homepage: https://github.com/commx/python-rrdtool
+X-Python-Version: >= 3.2
+
+Package: python3-rrdtool
+Architecture: amd64
+Depends: ${misc:Depends}, ${shlibs:Depends}, ${python3:Depends}
+Description: rrdtool bindings for Python
+ Python bindings for rrdtool with a native C extension and an object-oriented
+ way to work with Round Robin Databases.

@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python3
+
+override_dh_clean:
+	rm -rf build
+	dh_clean
+
+override_dh_install:
+	python3 setup.py install --prefix=$$(pwd)/debian/python3-rrdtool/usr
+	dh_install

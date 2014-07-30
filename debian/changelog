@@ -1,0 +1,9 @@
+python3-rrdtool (0.1.1-1) precise; urgency=low
+
+  * Added support for Python 2.7 (other 2.x versions might also work, but its
+    not tested)
+  * Added dump command
+  * Fixed some issues regarding generating graphs with `graphv` on Python 3.3
+  * Initial Debian release.
+
+ -- Robert Manner <manner@balabit.com>  Wed, 19 Dec 2013 20:10:32 +0200
